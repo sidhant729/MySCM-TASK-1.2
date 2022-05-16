@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .ansh {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      font-size: 30px;
+      /* text-decoration: none; */
+      height: 55px;
+      /* padding: 0px 100px; */
+      /* margin: 100px; */
+      /* border: 2px solid black; */
+      /* background-color: red; */
+
+    }
+    h1 {
+      font-size: 55px;
+      /*border: 2px solid black;*/
+      height: 45px;
+      text-align: center;
+      color: white;
+      /* background-color: red; */
+    }
+
+    .ansh navbar a {
+      text-decoration: none;
+      color: cyan;
+    }
+
+    .ansh div {
+      padding: 3px 24px;
+      margin: 8px 40px;
+      color: cyan;
+      background-color: red;
+      border: 2px solid cyan;
+      border-radius: 30%;
+    }
+
+    .ansh div:hover {
+      background-color: cyan;
+      color: black;
+    }
+    .move-me {
+      display: inline-block;
+      padding: 20px;
+      color: white;
+      position: relative;
+      margin: 0 0 9px 0;
+      overflow: hidden;
+    }
+
+    .move-me-3 {
+      animation: move-in-steps ease-in-out 11s infinite;
+      animation-direction: reverse;
+      width: 100%;
+      color: black;
+      height: 7px;
+      font-size: 25px;
+      word-spacing: 0.3cm;
+      align-items: center;
+    }
+    .color{
+        background-color: rgb(226, 143, 122);
+        text-decoration: none;
+    }
+    .vansh{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 110px;
+        width: 100%;
+        height: 225px;
+        font-size: 30px;
+        background-color: rgb(223, 71, 78);
+    }
+    .santa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 110px;
+        padding-left: 35px;
+        width: 100%;
+        height: 255px;
+        font-size: 28px;
+        background-color: black;
+    }
+        table{
+            margin-left: 315px;
+            width: 56%;
+            height: 200px;
+            background-color: #7ee778;
+        }
+        .tutha{
+            background-color: lightsteelblue;
+            padding-top: 15px;
+        }
+        @keyframes move-in-steps {
+      0% {
+        left: 0;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="color">
+   <h1 align="center"><b>AUTOCARS</b></h1>
+    <div class="ansh">
+   <a href="mainproject.html" target="_blank"  style="text-decoration: none;"><div class="navbar">Home</div></a>
+      <a href="support.html" target="_blank" style="text-decoration: none;"><div class="navbar">Used Cars</div></a>
+      <a href="mainproject4.html" target="_blank" style="text-decoration: none;"><div class="navbar">New Cars</div></a>
+      <a href="monu.html" target="_blank" style="text-decoration: none;"><div class="navbar">Media</div></a>
+      <a href="monu2.html" target="_blank" style="text-decoration: none;"><div class="navbar">About Us</div></a>
+      <a href="monu3.html" target="_blank" style="text-decoration: none;"><div class="navbar">Register</div></a>
+  
+    </div>
+    <div class="move-me move-me-3">WELCOME TO AUTOCARS, Here You Will Get your desired Cars With Their ultimate Best Prices with good discounts</div></div>
+   <div class="tutha">
+    <table border="10px solid black" cellspacing="45" cellpadding="05">
+        <thead>
+            <tr style="font-size: 45px; background-color: red;">
+                <th colspan="2"><mark> LIST OF NEW CARS</mark></th>
+            </tr>
+        </thead>
+        <tr style="background-color: skyblue; font-size: 33px;">
+            <th>IMAGES OF CARS</th>
+            <th>DETAILS OF CARS</th>
+        </tr>
+        <tr style="background-color: papayawhip; font-size: 25px;">
+            <td align="center"><img src="ansh11.jpg" alt="" onclick="myOne()"></td>
+            <td onclick="myCar()"><p>&#9989;This is Maruti Suzuki Ertiga
+                <ul style="list-style-type:disc;">
+                    <li>person-capacity = 7</li>
+                    <li>fuel-economy = 18-26km/l</li>
+                    <li>released : april 12,2012</li>
+                    <li>price = 7.96-10.7 lakhs</li>
+                </ul>
+            </p>
+            </td>
+        </tr>
+        <tr style="background-color: papayawhip;font-size: 25px;">
+            <td align="center"><img src="ansh12.jpg" alt="" onclick="myOne()"></td>
+            <td onclick="myCar()"><p>&#9989;This is Maruti Suzuki Dzire 
+                <ul style="list-style-type:square;">
+                    <li>person-capacity = 5</li>
+                    <li>fuel-economy = 23-24km/l</li>
+                    <li>released : may 16,2017</li>
+                    <li>price = 7.96-10.7 lakhs</li>
+                </ul>
+            </p>
+            </td>
+        </tr>
+        <tr style="background-color: papayawhip;font-size: 25px;">
+            <td align="center"><img src="ansh13.jpg" alt="" onclick="myOne()"></td>
+            <td onclick="myCar()"><p>&#9989;This is Mercedes Benz A-Class
+                <ul style="list-style-type:disc;">
+                    <li>person-capacity = 5</li>
+                    <li>fuel-economy = 15.5-20.0 Kmpl</li>
+                    <li>released : 2021</li>
+                    <li>price = 41.55-43.58 lakhs</li>
+                </ul>
+            </p>
+            </td>
+        </tr>
+        <tr style="background-color: papayawhip;font-size: 25px;">
+            <td align="center"><img src="ansh14.jpg" alt="" onclick="myOne()"></td>
+            <td onclick="myCar()"><p>&#9989;This is Mercedes Benz C-Class
+                <ul style="list-style-type:square;">
+                    <li>person-capacity = 5</li>
+                    <li>fuel-economy = 10-19km/l</li>
+                    <li>released : 2021</li>
+                    <li>price = 40.9-65.0 lakhs</li>
+                </ul>
+            </p>
+            </td>
+        </tr>
+        <tr style="background-color: papayawhip;font-size: 25px;">
+            <td align="center"><img src="ansh15.jpg" alt="" onclick="myOne()"></td>
+            <td onclick="myCar()"><p>&#9989;This is TATA Tiago
+                <ul style="list-style-type:circle;">
+                    <li>person-capacity = 5</li>
+                    <li>fuel-economy = 20km/l</li>
+                    <li>released : 4 august,2021</li>
+                    <li>price = 5.0-7.12 lakhs</li>
+                </ul>
+            </p>
+            </td>
+        </tr>
+        <tr style="background-color: papayawhip;font-size: 25px;">
+            <td align="center"><img src="ansh16.jpg" alt="" onclick="myOne()"></td>
+            <td onclick="myCar()"><p>&#9989;This is Ford Ecosport
+                <ul style="list-style-type:square;">
+                    <li>person-capacity = 5</li>
+                    <li>fuel-economy = 15-21km/l</li>
+                    <li>released : 2013</li>
+                    <li>price = 8.19-11.7 lakhs</li>
+                </ul>
+            </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="vansh">
+            <div><img src="ansh7.jpg" alt="" width="35%" height="65px"><b>INDIA'S #1</b><br>largest autoportal site</div>
+            <div><img src="ansh8.png" alt="" width="35%" height="65px"><b>CAR </b><br>sold every 15th day </div>
+            <div><img src="ansh9.jpg" alt="" width="35%" height="65px"><b>OFFERS</b> <br>stay updating pay less</div>
+            <div><img src="ansh10.jpg" alt="" width="35%" height="65px"><b>COMPARE</b><br> Decode the right car</div>
+</div>
+<div class="santa" style="color: white;">
+    <a href="monu2.html" target="_blank" style="color: white; text-decoration: none;"><div style="color: white;">OVERVIEW<br><br>About us<br>FAQs<br>Privacy policy</div></a>
+    <div>OTHERS<br><br>Advertise with Us<br>Careers<br>Customers Care</div>
+    <div>CONNECT WITH US<br><br>1800 200 3000 (TOLL-FREE)<br>Support @ Autocars<br>Used Car Busiiness</div>
+    <div></div>
+</div>
+<script>
+    function myOne(){
+        confirm("Do you want to add this car in your carlist?");
+    }
+    function myCar() {
+  let person = prompt("Do you have any query about this car?", "If you have any query then click Ok else cancel to exit.");
+  if (person != null) {
+          prompt("write your query sir/mam","");
+      }
+      alert("Thank you for your feedback ")
+}
+</script>
+</body>
+</html>
