@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .move-me {
+      display: inline-block;
+      padding: 20px;
+      color: white;
+      position: relative;
+      margin: 0 0 9px 0;
+      overflow: hidden;
+    }
+
+    .move-me-3 {
+      animation: move-in-steps ease-in-out 11s infinite;
+      animation-direction: reverse;
+      width: 100%;
+      /* background-color: a; */
+      color: khaki;
+      height: 80px;
+      font-size: 85px;
+      word-spacing: 0.3cm;
+      align-items: center;
+    }
+
+    .ansh2 {
+      display: flex;
+      flex-direction: column;
+      background-color: burlywood;
+      width: 1500px;
+      height: 25px;
+      font-size: 25px;
+      align-items: center;
+    }
+
+    .container1 {
+      position: relative;
+      font-family: Arial;
+      width: 100%;
+      height: 45%;
+      background-color: black;
+
+    }
+
+    .text-block {
+      position: absolute;
+      width: 20%;
+      height: 45%;
+      bottom: 20%;
+      top: 3%;
+      left: 70%;
+      right: 1%;
+      background-color: #1ed687;
+      font-size: 85px;
+      padding-left: 200px;
+      padding-right: 100px;
+      opacity: 0.8;
+      color: white;
+    }
+
+    body {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .ansh {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      font-size: 85px;
+      /* text-decoration: none; */
+      height: 205px;
+      /* padding: 0px 100px; */
+      /* margin: 100px; */
+      /* border: 2px solid black; */
+      /* background-color: red; */
+      /*background-color: #2bf1d4;*/
+    }
+
+    .ansh navbar a {
+      text-decoration: none;
+      color: cyan;
+    }
+
+    .ansh div {
+      padding: 3px 30px;
+      margin: 0px 60px;
+      color: cyan;
+      border: 2px solid cyan;
+      border-radius: 50px;
+    }
+
+    .ansh div:hover {
+      background-color: cyan;
+      color: black;
+    }
+
+    .anshu {
+      background: url('ansh52.jpg')no-repeat center center/cover;
+      /* background-repeat: no-repeat; */
+      /* background-size: contain; */
+      width: 100%;
+      height: 2000px;
+      z-index: -1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+
+    h1 {
+      font-size: 85px;
+      height: 125px;
+      text-align: center;
+      color: khaki;
+      /* background-color: red; */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+
+      background: radial-gradient(yellow, slateblue, lightgrey);
+      width: 70%;
+      margin-left: 650px;
+      margin-top: 85px;
+
+    }
+
+    .container>div {
+      background: radial-gradient(grey, indianred);
+      color: white;
+      margin: 25px;
+      padding: 10px;
+      justify-content: center;
+      width: 70%;
+      line-height: 85px;
+      font-size: 35px;
+    }
+
+    .content1 {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      background: radial-gradient(yellow, slateblue, lightgrey);
+      width: 70%;
+      margin-left: 650px;
+      margin-top: 45px;
+      margin-bottom: 55px;
+    }
+
+    .content1>div {
+      background: radial-gradient(grey, indianred);
+      color: white;
+      margin: 25px;
+      padding: 10px;
+      justify-content: center;
+      width: 70%;
+      line-height: 85px;
+      font-size: 35px;
+    }
+
+    header {
+      font-size: 95px;
+      color: cyan;
+      word-spacing: 10px;
+    }
+
+    .content2 {
+      display: flex;
+      flex-direction: row;
+      background: radial-gradient(white, red, orange);
+      width: 70%;
+      margin-left: 650px;
+      margin-top: 85px;
+    }
+
+    .content2>div {
+      background: radial-gradient(dodgerblue, indigo);
+      color: white;
+      margin: 45px;
+      padding: 5px;
+      justify-content: center;
+      width: 70%;
+      line-height: 55px;
+      font-size: 75px;
+    }
+
+    .content3 {
+      display: flex;
+      flex-direction: row;
+      background: radial-gradient(white, red, orange);
+      width: 70%;
+      margin-left: 650px;
+      margin-bottom: 85px;
+      margin-top: 35px;
+    }
+
+    .content3>div {
+      background: radial-gradient(dodgerblue, indigo);
+      color: white;
+      margin: 35px;
+      padding: 10px;
+      justify-content: center;
+      width: 70%;
+      line-height: 85px;
+      font-size: 85px;
+    }
+
+    .to {
+      display: flex;
+      flex-direction: row;
+      margin: 5px;
+      padding: 15px;
+      justify-content: space-around;
+
+      margin: 25px;
+      height: 70%;
+      background-color: white;
+
+    }
+    /*a:link{
+      background-color: white;
+      color: red;
+      text-decoration: none;
+    }*/
+
+    .to>div {
+      background-color: rgb(196,181,208);
+    }
+
+    .animal {
+      background: linear-gradient(orange, white);
+      color: red;
+      border: 3px solid orange;
+      padding-left: 255px;
+      padding-right: 325px;
+      font-size: 75px;
+      width: 86.70%;
+      height: 600px;
+    }
+
+    .tukon {
+      background-image: url('ansh53.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 1600px;
+      border: 10px solid #044ea9;
+      background-color: indigo;
+      padding-top: 0px;
+      text-align: center;
+      font-size: 95px;
+    }
+
+    .tukon1 {
+      width: 100%;
+      height: 1600px;
+      border: 2px solid white;
+      padding-top: 0px;
+      background-color: lightskyblue;
+      text-align: center;
+      font-size: 65px;
+    }
+
+    .santa {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 300px;
+      padding-left: 450px;
+      padding-bottom: 45px;
+      width: 97.4%;
+      height: 800px; 
+      font-size: 95px;
+      background-color:black;
+    }
+
+    @keyframes move-in-steps {
+      0% {
+        left: 0;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color: white;">
+  <div class="color" style="background-color: black">
+  <h1><b>AUTOCARS</b></h1>
+  <div class="ansh">
+    <a href="mainproject.html" target="_blank" style="text-decoration: none;">
+      <div class="navbar">Home</div>
+    </a>
+    <a href="support.html" target="_blank" style="text-decoration: none;">
+      <div class="navbar">Used Cars</div>
+    </a>
+    <a href="mainproject4.html" target="_blank" style="text-decoration: none;">
+      <div class="navbar">New Cars</div>
+    </a>
+    <a href="monu.html" target="_blank" style="text-decoration: none;">
+      <div class="navbar">Media</div>
+    </a>
+    <a href="monu2.html" target="_blank" style="text-decoration: none;">
+      <div class="navbar">About Us</div>
+    </a>
+    <a href="monu3.html" target="_blank" style="text-decoration: none;">
+      <div class="navbar">Register</div>
+    </a>
+
+  </div><br>
+  <div class="move-me move-me-3">WELCOME TO AUTOCARS, Here You Will Get your desired Cars With Their ultimate Best
+    Prices with good discounts</div></div><br><br>
+  <div class="animal">
+    <h3 style="color: white;">WELCOME TO AUTOCARS</h3>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged.
+    </p>
+  </div>
+
+  <div class="anshu">
+    <div class="text-block" style="border: 10px solid rgb(146, 245, 96);">
+      <p><b><span align="center" style="color: rgb(0, 0, 0);">This is Autocars</span></b><br><br>We provide our
+        customers with multiple options
+        so<br> that they get more than<br> that of what they need
+      </p>
+    </div>
+  </div>
+  <hr><br>
+  <header align="center" style="background-color: black;color: white;"><b>SEARCH YOUR FAVOURITE CAR BY CITY</b>
+  </header><br>
+  <hr>
+  <div style="border: 10px solid white;">
+  <div class="container">
+    <div>
+      <h2><b>NEW DELHI</b></h2>
+      <a href="mainproject17.html" target="_blank"><img src="ansh54.jpg" width="900px" height="600px"></a><br>
+    </div>
+    <div>
+      <h2><b>HYDERABAD</b></h2>
+      <a href="mainproject18.html" target="_blank"><img src="ansh55.jpg" width="900px" height="600px"></a>
+    </div>
+    <div>
+      <h2><b>AHEMDABAD</b></h2>
+      <a href="mainproject19.html" target="_blank"><img src="ansh56.jpg" width="900px" height="600px"></a>
+    </div>
+  </div>
+  <div class="content1">
+
+    <div>
+      <h2><b>MUMBAI</b></h2>
+      <a href="mainproject20.html" target="_blank"><img src="ansh57.jpg" width="900px" height="600px"></a>
+    </div>
+    <div>
+      <h2><b>BANGALORE</b></h2>
+      <a href="mainproject21.html" target="_blank"><img src="ansh58.jpg" width="900px" height="600px"></a>
+    </div>
+    <div>
+      <h2><b>CHENNAI</b></h2>
+      <a href="mainproject22.html" target="_blank"><img src="ansh59.jpg" width="900px" height="600px"></a>
+    </div>
+  </div></div><br><br>
+  <hr>
+  <header align="center" style="background-color: black;color: white;"><b>SEARCH YOUR FAVOURITE CAR BY BRANDS </b>
+  </header>
+  <hr><br>
+  <div style="border: 30px solid white;">
+  <div class="content2">
+
+    <div>
+      <h2 style="font-size: 105px;">MARUTI-SUZUKI</h2><br>
+      <a href="mainproject16.html" target="_blank">
+        <img src="ansh60.jpg" width="900px" height="600px"></a>
+    </div>
+    <div>
+      <h2><b>HYUNDAI</b></h2><br>
+      <a href="mainproject15.html" target="_blank">
+        <img src="ansh61.png" width="900px" height="600px"></a>
+
+    </div>
+    <div>
+      <h2><b> HONDA</b></h2><br>
+      <a href="mainproject14.html" target="_blank">
+        <img src="ansh62.png" width="900px" height="600px"></a>
+    </div>
+  </div>
+  <div class="content3">
+
+    <div>
+      <h2><b>MAHINDRA</b></h2><a href="mainproject11.html" target="_blank">
+        <a href="mainproject11.html" target="_blank">
+          <img src="ansh63.png" width="900px" height="600px"></a>
+    </div>
+    <div>
+      <h2><b>FORD</b></h2>
+      <a href="mainproject12.html" target="_blank">
+        <img src="ansh64.jpg" width="900px" height="600px"></a>
+    </div>
+    <div>
+      <h2><b>TATA</b></h2>
+      <a href="mainproject13.html" target="_blank">
+        <img src="ansh65.png" width="900px" height="600px"></a>
+    </div>
+  </div>
+  </div>
+
+  <div class="tukon" style="border: 20px solid ;">
+    <div>
+      <br><br><br>
+      <h3 style="color: lime; font-size: 100px;" );">HOW AUTOCARS STORE WORKS ?</h3>
+      <table class="box" align="center" cellspacing="35" cellpadding="15" style="color: white;"">
+            <tr>
+                <td><b style=" color: cyan;">1. Check Valuation</b><br><br>Enter car details & get best<br> price
+        instantly</td>
+        <td><br><b style="color: cyan;">2. Book Inspection</b><br><br> Book your car’s inspection at<br> your Home or at
+          nearby<br> Gaadi store & get best offer</td>
+        <td><br><b style="color: cyan;">3. Sell Car</b><br><br>After deal, we transfer the amount<br> instantly to your
+          account & assist<br> in RC transfer.</td>
+        </tr>
+      </table>
+    </div>
+  </div><br>
+  <div>
+    <div class="tukon1" style="border: 20px solid white;">
+      <br><br><br>
+      <h3 style="color: red;"><b style="font-size: 165px;">Why sell to Autocars Gaadi Store?</b><br>
+        Sell your car in one visit, Get Instant payment & Free RC Transfer</h3>
+      <table class="box" align="center" border="0" cellspacing="25" cellpadding="95" style="color: white;"">
+            <tr style=" font-size: 125px;">
+        <td><img src="https://stimg.cardekho.com/pwa/img/gaadistore/Bought.svg" width="30%"><br>
+          50,000+<br>
+          Cars bought</td>
+        <td><img src="https://stimg.cardekho.com/pwa/img/gaadistore/Dealers.svg" width="30%"><br>
+          3500 +<br>
+          Dealers Network</td>
+        <td><img src="https://stimg.cardekho.com/pwa/img/gaadistore/RCTransfer.svg" width="30%"><br>
+          5,000+<br>
+          RCs Transferred</td>
+        <td style="font-size: 95px;"><img src="https://stimg.cardekho.com/pwa/img/gaadistore/Location.svg"
+            width="30%"><br>
+          100+<br>
+          Serviceable locations</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <h1 style="border: 1px solid white; background-color: black; color: white; font-size: 95px;"><b>OUR&nbsp;&nbsp; CUSTOMERS&nbsp;&nbsp; REVIEW</b></h1>
+  <hr>
+  <div style="border: 30px solid white;">
+  <div class="to">
+    <div style="border: 8px solid red; width: 30%; padding: 25px; border-radius: 60px;">
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="ansh66.jpg"
+        style="border-radius:50%; width: 70%; height: 900px;"><br><br><br>
+      <p
+        style="border: radius 20%; width: 90%; height: 800px;  color: black; background-color: rgb(196,181,208); font-size: 55px; letter-spacing: 2px;  word-spacing: 3px; text-align: center;">
+        <b> KAMAL SINGHANIYA<br><br> EXECUTIVE MANAGER AT MINDA LIMITED, HARIDWAR .This is best site where we have
+          multiple of
+          choices.Thanks to autocars for making my year<br><br> &emsp;&emsp;I thanked my friend for recommending autocar
+          site to
+          me on time.AUTOCAR is one of the best car selling site for me so far.</b>
+      </p>
+    </div>
+    <div style="border: 8px solid red; border-radius: 60px; width: 30%; padding: 25px;">
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_jzZqPFm6nSaL65T-HqgeX1riQy9J4gteg&usqp=CAU"
+        style="border-radius:50%; width: 70%; height: 900px; align-items: center;"><br><br><br>
+      <p
+        style="border: radius 20%; width: 90%;height: 800px;  color: black; background-color: rgb(196,181,208); font-size: 55px; letter-spacing: 2px; word-spacing: 3px; text-align: center;">
+        <b> ATUL KUMAR<br><br> EXECUTIVE MANAGER AT HERO INDUSTRIES, DELHI.This is best site where we have multiple of
+          choices.Thanks to autocars for making my year special<br><br> &emsp;&emsp;I thanked my friend for recommending
+          autocar site to
+          me on time.AUTOCAR is one of the best car selling site.</b>
+      </p>
+    </div>
+    <div style="border: 8px solid red; width: 30%; padding: 25px; border-radius: 60px;">
+      &emsp;&emsp;&emsp;&emsp;&emsp&emsp;&emsp;<img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLNJaYQCNVfMa9D9i-VhppouoY5IhPEjfabA&usqp=CAU"
+        style="border-radius:50%; width: 70%; height: 900px;"><br><br>
+      <p
+        style="border: radius 20%; width: 90%;height: 800px;  color: black; background-color: rgb(196,181,208); font-size: 55px; letter-spacing: 2px; word-spacing: 3px; text-align: center;">
+        <b> RAJKUMAR DEOL<br><br> EXECUTIVE MANAGER AT TCPL, CHENNAI .This is best site where we can multiple of
+          choices.Thanks to autocars for making my year special<br><br> &emsp;&emsp;I thanked my friend for recommending
+          autocar site to
+          me on time.AUTOCAR is one of the best car selling site on the internet rightnow.</b>
+      </p>
+    </div>
+  </div></div><hr>
+  <div class="santa" style="color: white; border: 15px solid white; ">
+    <a href="monu2.html" target="_blank" style="color: white; text-decoration: none;"><div style="color: white;">OVERVIEW<br><br>About us<br>FAQs<br>Privacy policy</div></a>
+    <div>OTHERS<br><br>Advertise with Us<br>Careers<br>Customers Care</div>
+    <div>CONNECT WITH US<br><br>1800 200 3000 (TOLL-FREE)<br>Support @ Autocars<br>Used Car Busiiness</div>
+    <div></div>
+  </div>
+</body>
+</html>
